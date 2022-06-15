@@ -45,15 +45,15 @@ In this step, goal is to create and run Auto ML Experiment. For the purpose of t
 
 **Registered Dataset screenshot**
 
-![image-20220614191431572](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/Registered_dataset.png)
+![image-20220614191431572](Assets/Registered_dataset.png)
 
 **Experiment completed screenshot**: Below screenshot shows that the auto ml experiment is completed.
 
-![image-20220614195422353](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/Experiment_completed.png)
+![image-20220614195422353](Assets/Experiment_completed.png)
 
 **Best model for the experiment screenshot**: Above and below picture provides the details of the best model after the experiment is completed. In this case best model is Voting Ensemble with 94.79% area under the curve. 
 
-![image-20220614195803950](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/Best_model.png)
+![image-20220614195803950](Assets/Best_model.png)
 
 ### Step3: Deploy the best model
 
@@ -64,15 +64,15 @@ In this step, the goal is to deploy the best model. Following steps are performe
 
 **Deploying the best model**
 
-![image-20220614200622528](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/deploying_model1.png)
+![image-20220614200622528](Assets/deploying_model1.png)
 
-![image-20220614214702132](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/deploying_model2.png)
+![image-20220614214702132](Assets/deploying_model2.png)
 
 **Best model deployed successfully**
 
-![image-20220614214734256](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/deploying_model3.png)
+![image-20220614214734256](Assets/deploying_model3.png)
 
-![image-20220614215205210](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/deploying_model4.png)
+![image-20220614215205210](Assets/deploying_model4.png)
 
 
 
@@ -80,11 +80,11 @@ In this step, the goal is to deploy the best model. Following steps are performe
 
 To enable application insights, I have downloaded the config.json (file for the current workspace) and stored along with the logs.py file. In the logs.py file, updated the name of the deployment and ran it to enable the application insights.
 
-![image-2022061421582401](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/Enable_App_Insights1.png)
+![image-2022061421582401](Assets/Enable_App_Insights1.png)
 
 Note: Running the logs.py file requires the authentication. Once logged in, we can see the logs. In the below screenshot, we can notice that the application insights enabled = "true"
 
-![image-20220614220040591](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/Enable_App_Insights2.png)
+![image-20220614220040591](Assets/Enable_App_Insights2.png)
 
 
 
@@ -99,7 +99,7 @@ In this step, we will consume the deployed model using swagger. For that, need t
 
 
 
-![image-20220614223441002](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/swagger1.png)
+![image-20220614223441002](Assets/swagger1.png)
 
 
 
@@ -107,19 +107,19 @@ In this step, we will consume the deployed model using swagger. For that, need t
 
 
 
-![image-2022061422470626](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/swagger3.png)
+![image-2022061422470626](Assets/swagger3.png)
 
 Screenshot of Swagger running on local host 
 
-![image-2022061422480566](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/swagger4.png)
+![image-2022061422480566](Assets/swagger4.png)
 
-![](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/swagger5.png)
+![](Assets/swagger5.png)
 
 ### Step6: Consume Model Endpoints
 
 In this step, need to use scoring_uri and the key to match the key for your service and the uri that was generated after the deployment in the endpoint.py and execute it. Below is the screenshot of this step and as you can notice that the output after executing the endpoint.py is {'Result" : ["yes", "no"]}, which is expected.
 
-![](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/model_endpoint.png)
+![](Assets/model_endpoint.png)
 
 
 
@@ -129,25 +129,25 @@ In this step, I have used the jupyter notebook "amp-pipelines-with-automated-mac
 
 Created a pipeline
 
-![](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/pipeline1.png)
+![](Assets/pipeline1.png)
 
 
 
 Pipeline Endpoint overview
 
-![](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/pipeline2.png)
+![](Assets/pipeline2.png)
 
-![](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/pipeline3.png)
+![](Assets/pipeline3.png)
 
 
 
 Completed pipeline runs and endpoints
 
-![](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/pipeline4.png)
+![](Assets/pipeline4.png)
 
 RunDetails widget screenshot 
 
-![](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/pipeline5.png)
+![](Assets/pipeline5.png)
 
 Note: Although run details widgets run successfully, it did not show the report. But, we can see the pipline status as completed and deployed.
 
