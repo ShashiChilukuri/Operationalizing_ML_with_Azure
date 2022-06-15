@@ -1,6 +1,19 @@
-[TOC]
-
 # Operationalizing ML with Azure
+
+## Table of Contents 
+Overview of the project
+Architectural Diagram
+Key Steps:
+* Step1: Authentication
+* Step2: Create and run Auto ML Experiment
+* Step3: Deploy the best model
+* Step4: Enable Application Insights
+* Step5: Swagger Documentation 
+* Step6: Consume Model Endpoints
+* Step7: Create, Publish and Consume a pipeline
+* Step8: Documentation
+Future work
+
 
 ## Overview of the project
 
