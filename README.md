@@ -15,7 +15,7 @@ Architectural Diagram and Details steps with screenshots are provided below.
 
 ## Architectural Diagram
 
-![Arch_diagram1](/Users/shashi/Documents/Job/Azure/MLOPS_with_Azure/Assets/Arch_diagram1.png)
+![Arch_diagram1](Assets/Arch_diagram1.png)
 
 Above image depicts the steps involved in performing this End-to-End ML project. Lets get to each step and see what needs to be done in that step:
 
